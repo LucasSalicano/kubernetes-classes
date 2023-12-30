@@ -9,7 +9,7 @@ func main() {
 	http.HandleFunc("/", Hello)
 	err := http.ListenAndServe(":80", nil)
 	if err != nil {
-		fmt.Println("Erro ao iniciar o servidor:", err)
+		fmt.Println("Failed to start the server: ", err)
 	}
 }
 
